@@ -18,7 +18,13 @@ public class SudokuBoard{
    }
    
    public String toString(){
-      String board = "";
-      return board;
+      String result = "";
+      for(int r = 0; r < board.length; r++){
+         for(int c = 0; c < board[r].length; c++){
+            result += board[r][c] + " ";
+         }
+         result += "\n";
+      }
+      return result;
    }
 }
